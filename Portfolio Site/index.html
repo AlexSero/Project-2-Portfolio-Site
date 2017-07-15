@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Alex Sero - Full Stack Software engineer">
+    <meta name="keywords" content="online portfolio, Alex Zhong Sero, HTML, CSS, web developer, Full Stack">
+    <meta name="author" content="Alex Zhong Sero">
+    <title>Alex Zhong Sero's Portfolio Site</title>
+    <!--icon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#db6a7f">
+    <meta name="apple-mobile-web-app-title" content="Alex's Portfolio">
+    <meta name="application-name" content="Alex's Portfolio">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    hr {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 2px;
+        color: darkgray;
+    }
+    .img {
+    position: relative;
+    float:right;
+    width:  100%;
+    height: 300px;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="col-md-2">
+                    <img class="img-responsive logo" src="images/logo.png" alt="Portfolio Site Logo">
+                </div>
+
+                <div class="col-md-10 text-uppercase text-right">
+                    <h1>Alex Zhong Sero</h1>
+                    <h3>front-end ninja</h3>
+                </div>
+            </header>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <a href="#" data-toggle="modal" data-target="#about">
+                    <img class="img-responsive" src="images/write%20code.png" alt="Write Code">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+        </div>
+
+        <!--movie website-->
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 text-center project-item">
+                <a href="#" data-toggle="modal" data-target="#moviewebsite">
+                    <img class="img-responsive center-block img" src="images/Movie_website_screenshot.PNG" alt="Screenshot of Fresh Tomatoes">
+                </a>
+                <h3 class="text-uppercase">Movie Website</h3>
+                <p>
+                    <a href="https://github.com/AlexSero/Movie-Website-Project">
+            Link to project on GitHub
+          </a>
+                </p>
+            </div>
+
+            <!--arcade game-->
+            <div class="col-md-4 col-sm-6 text-center project-item">
+                <a href="#" data-toggle="modal" data-target="#projectgame">
+                    <img class="img-responsive center-block img" src="images/arcade%20game%201.png" alt="Screenshot of simple arcade game">
+                </a>
+                <h3 class="text-uppercase">JavaScript Arcade Game</h3>
+                <p>
+                    <a href="">
+            Link to project on GitHub
+          </a>
+                </p>
+            </div>
+            <!--disney-->
+            <div class="col-md-4 col-sm-6 text-center project-item">
+                <a href="#" data-toggle="modal" data-target="#disney">
+                    <img class="img-responsive center-block img" src="images/disney%201.PNG" alt="Screenshot of disney game">
+                </a>
+                <h3 class="text-uppercase">Disney Games</h3>
+                <p>
+                    <a href="http://lol.disney.com/games">
+            Link to play
+          </a>
+                </p>
+            </div>
+            <!--modal about-->
+
+            <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="about">About this website</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-responsive modal-img" src="images/webpage%20screenshot.PNG"> This is a responsive website built using the <a href="http://getbootstrap.com/">Bootstrap</a> framework and custom CSS. The site features some of the projects I have worked on. Further details of each project can be revealed by click on an project image or by visiting the project on GitHub. The source code for this site can be found on my GitHub account
+                            <a href="https://github.com/SteveWooding/my-portfolio" target="_blank">here</a>.
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--modal movie website-->
+            <div class="modal fade" id="moviewebsite" tabindex="-1" role="dialog" aria-labelledby="moviewebsite" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="moviewebsite">Movie Website Project</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-responsive modal-img" src="images/Movie_website_screenshot.PNG">
+                            <p>
+                                This is the Movie Website project. For more information visit <a href="https://github.com/AlexSero/Movie-Website-Project">my Github page</a>.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for arcade game project -->
+            <div class="modal fade" id="projectgame" tabindex="-1" role="dialog" aria-labelledby="arcadeGame" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="arcadeGame">JavaScript Arcade Game</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-responsive modal-img" src="images/arcade%20game%202.png">
+                            <p>
+                                This JavaScript arcade game uses object-oriented design patterns to handle multiple game objects. This was a Udacity project with the graphics and basic engine supplied. I coded the game logic and added features such as levels, lives and high score. A live version of the game can be found <a href="">here</a>.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js/jquery-1.12.0.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
