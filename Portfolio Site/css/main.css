@@ -29,7 +29,24 @@ h2 {
 .portfolio-img {
     cursor: pointer;
 }
-
+ hr {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 2px;
+        color: darkgray;
+    }
+    .img {
+    position: relative;
+    float:right;
+    width:  100%;
+    height: auto;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+        }
 /* responsive*/
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
